@@ -5,7 +5,7 @@ import { useState, Fragment } from 'react'
 import { Switch, Transition } from '@headlessui/react'
 
 function SwitchPage() {
-  
+
   const [enabled, setEnabled] = useState(false);
   const [enabled2, setEnabled2] = useState(false);
   const [enabled3, setEnabled3] = useState(false);
@@ -38,85 +38,85 @@ function SwitchPage() {
           <br></br>
           <div class="whitespace-pre-wrap relative bg-slate-200/70 px-6 pt-5 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
             <div class="justify-between">
-            <div class="py-4">
-              <Switch.Group>
-                <div class="flex justify-between">
-                  <Switch.Label class="mr-4">You can click the text too!</Switch.Label>
-                  <Switch
-                    checked={enabled}
-                    onChange={setEnabled}
-                    class={`${enabled ? 'bg-yellow-800' : 'bg-yellow-500'}
+              <div class="py-4">
+                <Switch.Group>
+                  <div class="flex justify-between">
+                    <Switch.Label class="mr-4">You can click the text too!</Switch.Label>
+                    <Switch
+                      checked={enabled}
+                      onChange={setEnabled}
+                      class={`${enabled ? 'bg-yellow-800' : 'bg-yellow-500'}
           relative inline-flex h-[38px] w-[74px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
-                  >
-                    <span class="sr-only">Use setting</span>
-                    <span
-                      aria-hidden="true"
-                      class={`${enabled ? 'translate-x-9' : 'translate-x-0'}
+                    >
+                      <span class="sr-only">Use setting</span>
+                      <span
+                        aria-hidden="true"
+                        class={`${enabled ? 'translate-x-9' : 'translate-x-0'}
             pointer-events-none inline-block h-[34px] w-[34px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
-                    />
-                  </Switch>
-                </div>
-              </Switch.Group>
-            </div>
-            <div class="py-4">
-              <Switch.Group>
-                <div class="flex justify-between">
-                  <Switch.Label class="mr-4" passive>Or you can make it passive.</Switch.Label>
-                  <Transition
-          as={Fragment}
-          show={isShowing}
-          enter="transform transition duration-[400ms]"
-          enterFrom="opacity-0 rotate-[-120deg] scale-50"
-          enterTo="opacity-100 rotate-0 scale-100"
-          leave="transform duration-200 transition ease-in-out"
-          leaveFrom="opacity-100 rotate-0 scale-100 "
-          leaveTo="opacity-100 scale-95 "
-        >
-                  <Switch
-                  onClick={() => {
-                    setIsShowing(false)
-                    setEnabled3(true)
-                  }}
-                    checked={enabled2}
-                    onChange={setEnabled2}
-                    class={`${enabled2 ? 'bg-sky-800' : 'bg-sky-500'}
+                      />
+                    </Switch>
+                  </div>
+                </Switch.Group>
+              </div>
+              <div class="py-4">
+                <Switch.Group>
+                  <div class="flex justify-between">
+                    <Switch.Label class="mr-4" passive>Or you can make it passive.</Switch.Label>
+                    <Transition
+                      as={Fragment}
+                      show={isShowing}
+                      enter="transform transition duration-[400ms]"
+                      enterFrom="opacity-0 rotate-[-120deg] scale-50"
+                      enterTo="opacity-100 rotate-0 scale-100"
+                      leave="transform duration-200 transition ease-in-out"
+                      leaveFrom="opacity-100 rotate-0 scale-100 "
+                      leaveTo="opacity-100 scale-95 "
+                    >
+                      <Switch
+                        onClick={() => {
+                          setIsShowing(false)
+                          setEnabled3(true)
+                        }}
+                        checked={enabled2}
+                        onChange={setEnabled2}
+                        class={`${enabled2 ? 'bg-sky-800' : 'bg-sky-500'}
           relative inline-flex h-[38px] w-[74px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
-                  >
-                    <span class="sr-only">Use setting</span>
-                    <span
-                      aria-hidden="true"
-                      class={`${enabled2 ? 'translate-x-9' : 'translate-x-0'}
+                      >
+                        <span class="sr-only">Use setting</span>
+                        <span
+                          aria-hidden="true"
+                          class={`${enabled2 ? 'translate-x-9' : 'translate-x-0'}
             pointer-events-none inline-block h-[34px] w-[34px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
-                    />
-                  </Switch>
-                  </Transition>
-                </div>
-              </Switch.Group>
-            </div>
-            <div class="py-4">
-              <Switch.Group>
-                <div class="flex justify-between">
-                  <Switch.Label class="mr-4" passive>Bring the other switch back ;)</Switch.Label>
-                  <Switch
-                  onClick={() => {
-                    setIsShowing(true)
-                    setEnabled2(false)
-                  }}
-                    checked={enabled3}
-                    onChange={setEnabled3}
-                    class={`${enabled3 ? 'bg-emerald-800' : 'bg-emerald-500'}
+                        />
+                      </Switch>
+                    </Transition>
+                  </div>
+                </Switch.Group>
+              </div>
+              <div class="py-4">
+                <Switch.Group>
+                  <div class="flex justify-between">
+                    <Switch.Label class="mr-4" passive>Bring the other switch back ;)</Switch.Label>
+                    <Switch
+                      onClick={() => {
+                        setIsShowing(true)
+                        setEnabled2(false)
+                      }}
+                      checked={enabled3}
+                      onChange={setEnabled3}
+                      class={`${enabled3 ? 'bg-emerald-800' : 'bg-emerald-500'}
           relative inline-flex h-[38px] w-[74px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
-                  >
-                    <span class="sr-only">Use setting</span>
-                    <span
-                      aria-hidden="true"
-                      class={`${enabled3 ? 'translate-x-9' : 'translate-x-0'}
+                    >
+                      <span class="sr-only">Use setting</span>
+                      <span
+                        aria-hidden="true"
+                        class={`${enabled3 ? 'translate-x-9' : 'translate-x-0'}
             pointer-events-none inline-block h-[34px] w-[34px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
-                    />
-                  </Switch>
-                </div>
-              </Switch.Group>
-            </div>
+                      />
+                    </Switch>
+                  </div>
+                </Switch.Group>
+              </div>
             </div>
           </div>
           <div class="pt-8 text-base font-semibold leading-7">

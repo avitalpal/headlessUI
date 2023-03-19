@@ -24,7 +24,7 @@ function ExtraPage() {
             <p class="font-semibold text-lg text-left">To edit this page, go to your <code class="italic">ExtraPage.js</code> file.</p>
             <br></br>
             <p class="text-left">
-              <b> Each component in it has its own file for individual editing, found in <code class="italic">src &rarr; Extras</code>.</b><p class="my-3 font-semibold">There, you can experiment with things like:</p> 
+              <b> Each component in it has its own file for individual editing, found in <code class="italic">src &rarr; Extras</code>.</b><p class="my-3 font-semibold">There, you can experiment with things like:</p>
 
               <div>
                 <ul class="list-disc list-inside">
@@ -47,15 +47,15 @@ function ExtraPage() {
 
               <ComboboxExtras />
 
-              <br/>
+              <br />
 
               <DisclosureExtras />
 
-              <br/>
+              <br />
 
               <ModalExtras />
 
-              <br/>
+              <br />
 
               <PopoverExtras />
 
