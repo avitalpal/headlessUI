@@ -1,3 +1,14 @@
+Welcome! This repo holds a playground React app to test features of Tailwind CSS and Daisy UI
+
+Feel free to clone any of the code here and play around with it yourself, that's what this is for!
+To clone the whole repo: git clone `https://github.com/uploadwizrobotics/Wiz-Playground-HeadlessUI`
+
+To be able to use the features, make sure to check out DEPENDENCIES.txt for anything you may have to install locally
+
+Please do not commit any changes you make unless they are specifically to improve the playgrounds! We want these to be useable and easy to navigate in the future :)
+
+When committing a new change, please make sure to create a concise but clear message, so that we can easily tell what edits were made and pushed
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
