@@ -1,0 +1,35 @@
+DEPENDENCY DOWNLOADS:
+
+** HeadlessUI
+
+npm install --save-dev @headlessui/react
+
+// If you get an error with an inability to resolve `@headlessui/react`:
+// Install all other dependencies first and then re-install HeadlessUI at the end
+
+-------------------------------------------
+
+** Tailwind CSS 
+
+// To install Tailwind:
+npm install --save -D tailwindcss
+
+// To create the tailwind.config.js file (ONLY IF IT'S MISSING):
+npx tailwindcss init
+
+// Config command
+npx tailwindcss -i ./src/index.css -o ./dist/output.css --watch
+
+--------------------------------------------
+
+** Tailwind Typography plugin
+
+npm install -D --save @tailwindcss/typography
+
+--------------------------------------------
+
+** React router DOM 
+
+npm i --save-dev react-router-dom
+
+--------------------------------------------
