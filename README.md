@@ -1,5 +1,5 @@
 # Wiz-Playgrounds
-Welcome! This repo holds a playground React app to test features of Tailwind CSS and Daisy UI
+Welcome! This repo holds a playground React app to test HeadlessUI components (compatible with TailwindCSS!)
 
 1. Feel free to clone any of the code here and play around with it yourself, that's what this is for!
 
