@@ -1,11 +1,13 @@
-# Wiz-Playgrounds
-Welcome! This repo holds a playground React app to test HeadlessUI components (compatible with TailwindCSS!)
+# HeadlessUI-Playground
+Welcome! This repo holds a playground React app to test features of Tailwind CSS and HeadlessUI for Wiz Robotics (previous company). All component templates use HeadlessUI syntax, but are fully customized by yours truly!
 
-1. Feel free to clone any of the code here and play around with it yourself, that's what this is for!
+1. Feel free to clone any of the code here and play around with it yourself, that's what this is for :)
 
-To clone the whole repo: `git clone https://github.com/uploadwizrobotics/Wiz-Playground-HeadlessUI`
+To clone the whole repo: `git clone https://github.com/avitalpal/headlessUI`
 
 2. To be able to use the features, make sure to check out `DEPENDENCIES.txt` for anything you may have to install locally
+
+# Previously required instructions
 
 3. Please do not commit any changes you make unless they are specifically to improve the playgrounds! We want these to be useable and easy to navigate in the future :)
 
